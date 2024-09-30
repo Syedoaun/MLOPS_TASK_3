@@ -15,7 +15,7 @@ RUN pip install scikit-learn
 RUN pip install pandas
 
 # Make port 5000 available to the world outside this container
-EXPOSE 5000
+#EXPOSE 5000
 
 COPY . .
 # Run app.py when the container launches
