@@ -17,5 +17,15 @@ RUN pip install pandas
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 
+COPY . .
 # Run app.py when the container launches
 CMD ["python", "app.py"]
+
+
+
+# FROM python:3.8-slim
+# WORKDIR /app
+# COPY requirements.txt .
+# RUN pip install -r requirements.txt
+# COPY . .
+# CMD ["python", "app.py"]
